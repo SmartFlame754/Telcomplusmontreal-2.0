@@ -113,7 +113,7 @@ import React, { useState, useEffect, useRef } from 'react';
             datasets: [{
               label: 'Service Popularity',
               data: popularityData,
-              backgroundColor: '#ba2f19',
+              backgroundColor: '#9E2B25',
               borderWidth: 1
             }]
           },
