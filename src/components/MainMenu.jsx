@@ -170,7 +170,7 @@ import React, { useState, useEffect, useRef } from 'react';
                 </li>
                 <li style={{marginLeft: 'auto'}}><Link to="/contact">Contact Us</Link></li>
               </ul>
-              <a href="tel:+1488174587" className="call-button">Call Us</a>
+              <a href="tel:+1488174587" className="call-button" style={{ backgroundColor: '#ba2f19', color: 'white' }}>Call Us</a>
             </div>
           </nav>
         </>
