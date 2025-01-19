@@ -21,7 +21,7 @@ import React, { useState } from 'react';
           <div className="container">
             <h1>Contact Us</h1>
             <div className="contact-info">
-              <p>Phone: +1488174587</p>
+              <p>Phone: +14388174587</p>
               <p>Email: info@telecomplusmtl.com</p>
             </div>
             <form onSubmit={handleSubmit}>

@@ -147,11 +147,11 @@ import React, { useState, useEffect, useRef } from 'react';
           
           {/* Hero Section */}
           <section className="hero">
-            <div className="hero-content">
-              <div className="hero-text">
+            <div className="hero-content" style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+              <div className="hero-text" style={{textAlign: 'left'}}>
                 <h1>Professional Network Solutions</h1>
                 <p className="hero-subtitle">Reliable, efficient, and tailored to your business needs</p>
-                <div className="hero-cta">
+                <div className="hero-cta" style={{justifyContent: 'flex-start'}}>
                   <button className="btn-primary" onClick={() => navigate('/contact')}>
                     Get Started
                   </button>
@@ -161,7 +161,7 @@ import React, { useState, useEffect, useRef } from 'react';
                 </div>
               </div>
               {ipData.ip && (
-                <div className="hero-location">
+                <div className="hero-location" style={{textAlign: 'right'}}>
                   <h2>Your Location</h2>
                   <div className="ip-info">
                     <p>IP: {ipData.ip}</p>
