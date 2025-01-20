@@ -147,21 +147,21 @@ import React, { useState, useEffect, useRef } from 'react';
           
           {/* Hero Section */}
           <section className="hero">
-            <div className="hero-content" style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-              <div className="hero-text" style={{textAlign: 'left'}}>
+            <div className="hero-content">
+              <div className="hero-text">
                 <h1>Professional Network Solutions</h1>
                 <p className="hero-subtitle">Reliable, efficient, and tailored to your business needs</p>
                 <div className="hero-cta">
                   <button className="btn-primary" onClick={() => navigate('/contact')}>
                     Get Started
                   </button>
-                  <button className="btn-primary" onClick={() => navigate('/services')} style={{ backgroundColor: '#ff1e00', color: '#FFF8F0' }}>
+                  <button className="btn-secondary" onClick={() => navigate('/services')}>
                     Learn More
                   </button>
                 </div>
               </div>
               {ipData.ip && (
-                <div className="hero-location" style={{textAlign: 'right'}}>
+                <div className="hero-location">
                   <h2>Your Location</h2>
                   <div className="ip-info">
                     <p>IP: {ipData.ip}</p>
@@ -224,8 +224,8 @@ import React, { useState, useEffect, useRef } from 'react';
           {/* Services Section */}
           <section className="services-section" id="services">
             <div className="container">
-              <h2 className="section-title">Our Services</h2>
-              <p className="section-subtitle">Comprehensive solutions for all your networking needs</p>
+              <h2 className="section-title" style={{textAlign: 'center'}}>Our Services</h2>
+              <p className="section-subtitle" style={{textAlign: 'center'}}>Comprehensive solutions for all your networking needs</p>
               <div className="services-grid">
                 {services.map((service, index) => (
                   <div className="service-card" key={index}>

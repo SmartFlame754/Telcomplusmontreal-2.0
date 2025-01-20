@@ -123,7 +123,7 @@ import React, { useState, useEffect, useRef } from 'react';
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <img src="/facebook-icon.svg" alt="Facebook" />
               </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@telcomplusmontreal" target="_blank" rel="noopener noreferrer">
                 <img src="/youtube-icon.svg" alt="YouTube" />
               </a>
             </div>
@@ -138,15 +138,8 @@ import React, { useState, useEffect, useRef } from 'react';
                   <path d="M4 7v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
                   <path d="M4 2v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"></path>
                 </svg>
-                Telecom Plus Montreal
+                TelcomPlus Montreal
               </Link>
-              <div style={{display: 'flex', alignItems: 'center', marginLeft: 'auto'}}>
-                <div className="menu-toggle" onClick={toggleMobileMenu} style={{alignSelf: 'center', marginRight: '10px'}}>
-                  <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
-                  <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
-                  <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
-                </div>
-              </div>
               <ul className={`menu-links ${isMobileMenuOpen ? 'open' : ''}`} style={{alignItems: 'center'}}>
                 <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
                 <li><Link to="/about" onClick={closeMobileMenu}>About Us</Link></li>
@@ -189,10 +182,9 @@ import React, { useState, useEffect, useRef } from 'react';
                   )}
                 </li>
                 <li style={{marginLeft: 'auto'}}><Link to="/contact" onClick={closeMobileMenu}>Contact Us</Link>
+                 <a href="tel:+14388174587" className="call-button" style={{ backgroundColor: '#ff1e00', color: '#FFF8F0', transition: 'background-color 0.3s', marginLeft: '10px' }} onMouseOver={e => e.target.style.backgroundColor = '#7a2011'} onMouseOut={e => e.target.style.backgroundColor = '#ff1e00'}>Call Now</a>
                 </li>
-                 
               </ul>
-               <a href="tel:+14388174587" className="call-button" style={{ backgroundColor: '#ff1e00', color: '#FFF8F0', transition: 'background-color 0.3s', marginLeft: '10px' }} onMouseOver={e => e.target.style.backgroundColor = '#7a2011'} onMouseOut={e => e.target.style.backgroundColor = '#ff1e00'}>Call Now</a>
             </div>
           </nav>
         </>

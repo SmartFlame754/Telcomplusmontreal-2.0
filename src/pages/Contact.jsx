@@ -19,7 +19,7 @@ import React, { useState } from 'react';
         <div>
           <MainMenu />
           <div className="container">
-            <h1>Contact Us</h1>
+            <h1 style={{textAlign: 'center'}}>Contact Us</h1>
             <div className="contact-info">
               <p>Phone: +14388174587</p>
               <p>Email: info@telecomplusmtl.com</p>

@@ -6,7 +6,7 @@ import React from 'react';
         <div>
           <MainMenu />
           <div className="container">
-            <h1>About Us</h1>
+            <h1 style={{textAlign: 'center'}}>About Us</h1>
             <div className="about-content">
               <h2>Committed to Connectivity Excellence for Two Decades</h2>
               <p><strong>Telecom Plus Montreal: Your Trusted Telecom Solutions Partner</strong></p>

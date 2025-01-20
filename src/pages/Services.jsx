@@ -282,8 +282,10 @@ import React from 'react';
                   <div className="service-icon-container">
                     {service.icon}
                   </div>
-                  <h3>{service.name}</h3>
-                  <Link to={service.path} className="btn-primary">Learn More</Link>
+                  <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                    <h3>{service.name}</h3>
+                    <Link to={service.path} className="btn-primary">Learn More</Link>
+                  </div>
                 </div>
               ))}
             </div>
