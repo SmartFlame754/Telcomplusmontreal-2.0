@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
     import { Link, useNavigate } from 'react-router-dom';
+    import './MainMenu.css';
 
     const MainMenu = () => {
       const navigate = useNavigate();
       const servicesRef = useRef(null);
       const [isServicesOpen, setIsServicesOpen] = useState(false);
+      const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
       useEffect(() => {
         document.body.classList.add('dark-mode');
@@ -18,10 +20,21 @@ import React, { useState, useEffect, useRef } from 'react';
         setIsServicesOpen(false);
       };
 
+      const toggleMobileMenu = () => {
+        setIsMobileMenuOpen(!isMobileMenuOpen);
+      };
+
+      const closeMobileMenu = () => {
+        setIsMobileMenuOpen(false);
+      };
+
       useEffect(() => {
         const handleClickOutside = (event) => {
           if (servicesRef.current && !servicesRef.current.contains(event.target)) {
             closeServices();
+          }
+          if (isMobileMenuOpen && event.target.closest('.menu-links') === null && event.target.closest('.menu-toggle') === null) {
+            closeMobileMenu();
           }
         };
 
@@ -29,7 +42,7 @@ import React, { useState, useEffect, useRef } from 'react';
         return () => {
           document.removeEventListener('mousedown', handleClickOutside);
         };
-      }, []);
+      }, [isMobileMenuOpen]);
 
       const services = [
         { name: "Network Cabling", path: "/services/network-cabling", subcategories: [
@@ -127,11 +140,19 @@ import React, { useState, useEffect, useRef } from 'react';
                 </svg>
                 Telecom Plus Montreal
               </Link>
-              <ul className="menu-links">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About Us</Link></li>
+              <div style={{display: 'flex', alignItems: 'center', marginLeft: 'auto'}}>
+                
+                <div className="menu-toggle" onClick={toggleMobileMenu} style={{alignSelf: 'center', marginRight: '10px'}}>
+                  <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
+                  <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
+                  <div className={`bar ${isMobileMenuOpen ? 'open' : ''}`}></div>
+                </div>
+              </div>
+              <ul className={`menu-links ${isMobileMenuOpen ? 'open' : ''}`} style={{alignItems: 'center'}}>
+                <li><Link to="/" onClick={closeMobileMenu}>Home</Link></li>
+                <li><Link to="/about" onClick={closeMobileMenu}>About Us</Link></li>
                 <li ref={servicesRef} className="services-menu-item">
-                  <Link to="/services"  className="services-menu-button">
+                  <Link to="/services"  className="services-menu-button" onClick={closeMobileMenu}>
                     Services
                   </Link>
                   {isServicesOpen && (
@@ -168,9 +189,10 @@ import React, { useState, useEffect, useRef } from 'react';
                     </ul>
                   )}
                 </li>
-                <li style={{marginLeft: 'auto'}}><Link to="/contact">Contact Us</Link></li>
+                <li style={{marginLeft: 'auto'}}><Link to="/contact" onClick={closeMobileMenu}>Contact Us</Link>
+                <a href="tel:+14388174587" className="call-button" style={{ backgroundColor: '#9E2B25', color: '#FFF8F0', transition: 'background-color 0.3s', marginLeft: '10px' }} onMouseOver={e => e.target.style.backgroundColor = '#7a2011'} onMouseOut={e => e.target.style.backgroundColor = '#9E2B25'}>Call Us</a>
+                </li>
               </ul>
-              <a href="tel:+14388174587" className="call-button" style={{ backgroundColor: '#9E2B25', color: '#FFF8F0', transition: 'background-color 0.3s' }} onMouseOver={e => e.target.style.backgroundColor = '#7a2011'} onMouseOut={e => e.target.style.backgroundColor = '#9E2B25'}>Call Us</a>
             </div>
           </nav>
         </>
