@@ -1,8 +1,10 @@
 import React from 'react';
     import MainMenu from '../../components/MainMenu';
     import './ServiceArticle.css';
+    import { Link, useNavigate } from 'react-router-dom';
 
     const ITServices = () => {
+      const navigate = useNavigate();
       return (
         <div>
           <MainMenu />
@@ -54,6 +56,31 @@ import React from 'react';
                 <button className="btn-primary" onClick={() => navigate('/contact')}>
                   Get a Free Quote
                 </button>
+              </div>
+              <div className="service-locations">
+                <h2>Serving These Locations</h2>
+                <ul>
+                  <li><span>&#9675;</span> Montreal</li>
+                  <li><span>&#9675;</span> Laval</li>
+                  <li><span>&#9675;</span> West Island</li>
+                  <li><span>&#9675;</span> South Shore</li>
+                  <li><span>&#9675;</span> LaSalle</li>
+                  <li><span>&#9675;</span> DDO | Dollard-Des Ormeaux</li>
+                  <li><span>&#9675;</span> Blainville</li>
+                  <li><span>&#9675;</span> Longueuil</li>
+                  <li><span>&#9675;</span> Boucherville</li>
+                  <li><span>&#9675;</span> Saint-Eustache | St-Eustache</li>
+                  <li><span>&#9675;</span> Saint-Jerome | St-Jerome</li>
+                  <li><span>&#9675;</span> Deux-Montagnes</li>
+                  <li><span>&#9675;</span> Saint-Therese | St-Therese</li>
+                  <li><span>&#9675;</span> NDG | Notre-Dame-de-Grace</li>
+                  <li><span>&#9675;</span> Westmount</li>
+                  <li><span>&#9675;</span> Monkland Village</li>
+                  <li><span>&#9675;</span> Hampstead</li>
+                  <li><span>&#9675;</span> Dorval</li>
+                  <li><span>&#9675;</span> Griffintown</li>
+                  <li><span>&#9675;</span> Saint-Henri | St-Henri</li>
+                </ul>
               </div>
             </div>
           </div>

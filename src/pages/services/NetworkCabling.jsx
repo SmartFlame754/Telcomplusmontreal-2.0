@@ -1,7 +1,7 @@
 import React from 'react';
     import MainMenu from '../../components/MainMenu';
     import './ServiceArticle.css';
-    import { useNavigate } from 'react-router-dom';
+    import { Link, useNavigate } from 'react-router-dom';
 
     const NetworkCabling = () => {
       const navigate = useNavigate();
@@ -41,7 +41,7 @@ import React from 'react';
               
               <h2>Our Commitment</h2>
               <p>
-                Investing in professional network cabling is an investment in your business's future. With the right infrastructure, you can guarantee smooth operations, support growth, and boost your communications.
+                In summary, network cabling is a critical component for reliable voice communications, supporting both traditional and modern phone systems. A properly designed and installed phone cabling system is a worthwhile investment for any business or residence. It ensures clear communication, minimizes disruptions, and provides a solid foundation for future communication needs.
               </p>
               
               <h2>Ready to Improve Your Network?</h2>
@@ -53,6 +53,31 @@ import React from 'react';
                 <button className="btn-primary" onClick={() => navigate('/contact')}>
                   Get a Free Quote
                 </button>
+              </div>
+              <div className="service-locations">
+                <h2>Serving These Locations</h2>
+                <ul>
+                  <li><span>&#9675;</span> Montreal</li>
+                  <li><span>&#9675;</span> Laval</li>
+                  <li><span>&#9675;</span> West Island</li>
+                  <li><span>&#9675;</span> South Shore</li>
+                  <li><span>&#9675;</span> LaSalle</li>
+                  <li><span>&#9675;</span> DDO | Dollard-Des Ormeaux</li>
+                  <li><span>&#9675;</span> Blainville</li>
+                  <li><span>&#9675;</span> Longueuil</li>
+                  <li><span>&#9675;</span> Boucherville</li>
+                  <li><span>&#9675;</span> Saint-Eustache | St-Eustache</li>
+                  <li><span>&#9675;</span> Saint-Jerome | St-Jerome</li>
+                  <li><span>&#9675;</span> Deux-Montagnes</li>
+                  <li><span>&#9675;</span> Saint-Therese | St-Therese</li>
+                  <li><span>&#9675;</span> NDG | Notre-Dame-de-Grace</li>
+                  <li><span>&#9675;</span> Westmount</li>
+                  <li><span>&#9675;</span> Monkland Village</li>
+                  <li><span>&#9675;</span> Hampstead</li>
+                  <li><span>&#9675;</span> Dorval</li>
+                  <li><span>&#9675;</span> Griffintown</li>
+                  <li><span>&#9675;</span> Saint-Henri | St-Henri</li>
+                </ul>
               </div>
             </div>
           </div>

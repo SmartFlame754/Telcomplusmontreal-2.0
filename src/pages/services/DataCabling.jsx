@@ -1,7 +1,7 @@
 import React from 'react';
     import MainMenu from '../../components/MainMenu';
     import './ServiceArticle.css';
-    import { useNavigate } from 'react-router-dom';
+    import { Link, useNavigate } from 'react-router-dom';
 
     const DataCabling = () => {
       const navigate = useNavigate();
@@ -12,47 +12,74 @@ import React from 'react';
             <h1>Data Cabling Services</h1>
             <div className="article-content">
               <p>
-                Data cabling is the physical infrastructure of cables that transmit data within a network, connecting computers, servers, routers, switches, and other devices. It involves the planning, installation, and maintenance of these cables to ensure a reliable and efficient flow of information. Proper data cabling is essential for the smooth operation of any modern business.
+                In today's digital age, reliable data cabling is essential for seamless communication and efficient operations. At Telecom Plus Montreal, we provide expert data cabling services tailored to meet the specific needs of your business. Our solutions ensure high-speed data transfer, robust connectivity, and a scalable infrastructure to support your growth.
               </p>
               
-              <h2>Why Your Business Needs Professional Data Cabling</h2>
+              <h2>Our Data Cabling Solutions</h2>
               <p>
-                Here's why your business needs a professional data cabling system and how it benefits you:
-              </p>
-              <ul>
-                <li><strong>Reliable and Consistent Communication:</strong> A professionally installed system ensures smooth and consistent data flow, minimizing downtime and disruptions, and enabling your operations to run efficiently.</li>
-                <li><strong>Improved Speed and Performance:</strong> The right infrastructure enables faster data transmission, crucial for high-bandwidth applications and large file transfers.</li>
-                <li><strong>Scalability and Flexibility:</strong> Structured data cabling adapts to your business's growth and changing network needs, avoiding complete system overhauls.</li>
-                <li><strong>Reduced Downtime and Costs:</strong> Investing in a quality system reduces connection problems and signal degradation, preventing network downtime and associated losses.</li>
-                <li><strong>Support for Multiple Technologies:</strong> Modern systems support data, voice, video, and security systems over a single infrastructure, streamlining management and reducing complexity.</li>
-                <li><strong>Future-Proofing:</strong> Selecting advanced options like Cat6, Cat6a or fiber optics prepares businesses for future technological advancements, avoiding costly and frequent upgrades.</li>
-              </ul>
-              
-              <h2>Types of Data Cabling</h2>
-              <p>
-                We offer various types of data cabling to meet your specific needs:
+                We offer a comprehensive range of data cabling services, including:
               </p>
               <ul>
-                <li><strong>Cat5e, Cat6, Cat6a, Cat7:</strong> These are twisted-pair copper cables, each supporting different data transmission speeds and bandwidths.</li>
-                <li><strong>Fiber Optic Cabling:</strong> Ideal for high-speed data transmission over long distances and for high-bandwidth needs.</li>
-                 <li><strong>Voice Cabling:</strong> Specifically for phone systems, including VoIP.</li>
-                <li><strong>Audio/Video Cabling:</strong> Used for digital displays, speaker systems, and other A/V equipment.</li>
+                <li><strong>Cat5e Cabling:</strong> Cost-effective and reliable solutions for standard data transfer needs.</li>
+                <li><strong>Cat6 Cabling:</strong> High-performance cabling for faster data speeds and improved bandwidth.</li>
+                <li><strong>Cat6a Cabling:</strong> Enhanced Cat6 cabling for demanding network environments, supporting 10 Gigabit Ethernet.</li>
+                <li><strong>Cat7 Cabling:</strong> Advanced cabling solutions for the highest network performance and future-proofing your infrastructure.</li>
+                <li><strong>Structured Cabling:</strong> Organized and efficient cabling systems that provide a solid foundation for your network.</li>
+                <li><strong>Cable Testing and Certification:</strong> Rigorous testing to ensure all cabling meets industry standards and provides optimal performance.</li>
               </ul>
               
-              <h2>Our Commitment</h2>
+              <h2>Benefits of Our Data Cabling Services</h2>
               <p>
-                Investing in professional data cabling is an investment in the future of your business. With the right cabling infrastructure, you ensure smooth operations, support business growth, and enhance your communications.
+                Choosing Telecom Plus Montreal for your data cabling needs offers numerous advantages:
+              </p>
+              <ul>
+                <li><strong>Reliable Connectivity:</strong> Our expert installations ensure a stable and dependable network, minimizing downtime.</li>
+                <li><strong>High-Speed Data Transfer:</strong> With advanced cabling options, we provide the speed and bandwidth your business needs to operate efficiently.</li>
+                <li><strong>Scalability:</strong> Our solutions are designed to grow with your business, providing a flexible and scalable network infrastructure.</li>
+                <li><strong>Improved Performance:</strong> High-quality cabling reduces signal loss and interference, ensuring optimal network performance.</li>
+                <li><strong>Cost-Effective Solutions:</strong> We provide cost-effective solutions that meet your specific needs and budget.</li>
+                <li><strong>Professional Installation:</strong> Our certified technicians ensure all installations are done correctly and efficiently.</li>
+              </ul>
+              
+              <h2>Why Choose Telecom Plus Montreal?</h2>
+              <p>
+                We are committed to providing exceptional service and quality workmanship. Our team of certified technicians has the expertise and experience to handle projects of any size and complexity. We work closely with our clients to understand their specific needs and provide tailored solutions that meet their unique requirements.
               </p>
               
-              <h2>Ready to Optimize Your Network?</h2>
+              <h2>Ready to Enhance Your Data Network?</h2>
               <p>
-                Ready to optimize your business with a reliable network? Contact us today for a free data cabling assessment. Our experts will design a customized, high-quality system that meets your unique needs, from planning and installation to maintenance and testing, all designed to help your business thrive. Don't let network problems affect your productivity; take the step towards seamless connectivity today.
+                Contact Telecom Plus Montreal today to discuss your data cabling needs and discover how we can help you build a robust and efficient network infrastructure.
               </p>
               
               <div className="cta-section">
                 <button className="btn-primary" onClick={() => navigate('/contact')}>
                   Get a Free Quote
                 </button>
+              </div>
+              <div className="service-locations">
+                <h2>Serving These Locations</h2>
+                <ul>
+                  <li><span>&#9675;</span> Montreal</li>
+                  <li><span>&#9675;</span> Laval</li>
+                  <li><span>&#9675;</span> West Island</li>
+                  <li><span>&#9675;</span> South Shore</li>
+                  <li><span>&#9675;</span> LaSalle</li>
+                  <li><span>&#9675;</span> DDO | Dollard-Des Ormeaux</li>
+                  <li><span>&#9675;</span> Blainville</li>
+                  <li><span>&#9675;</span> Longueuil</li>
+                  <li><span>&#9675;</span> Boucherville</li>
+                  <li><span>&#9675;</span> Saint-Eustache | St-Eustache</li>
+                  <li><span>&#9675;</span> Saint-Jerome | St-Jerome</li>
+                  <li><span>&#9675;</span> Deux-Montagnes</li>
+                  <li><span>&#9675;</span> Saint-Therese | St-Therese</li>
+                  <li><span>&#9675;</span> NDG | Notre-Dame-de-Grace</li>
+                  <li><span>&#9675;</span> Westmount</li>
+                  <li><span>&#9675;</span> Monkland Village</li>
+                  <li><span>&#9675;</span> Hampstead</li>
+                  <li><span>&#9675;</span> Dorval</li>
+                  <li><span>&#9675;</span> Griffintown</li>
+                  <li><span>&#9675;</span> Saint-Henri | St-Henri</li>
+                </ul>
               </div>
             </div>
           </div>
