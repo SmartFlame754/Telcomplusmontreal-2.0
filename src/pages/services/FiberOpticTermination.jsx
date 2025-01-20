@@ -34,7 +34,7 @@ import React from 'react';
               <ul>
                 <li><strong>Essential for High-Speed Networks:</strong> With increasing demands for higher bandwidth and data speeds, fiber optic technology is essential, and therefore, proper termination is a vital requirement.</li>
                 <li><strong>Industry Standard:</strong> Fiber optic termination is an industry standard practice for high-performance data transmission in various applications such as data centers, telecommunications, and enterprise networks.</li>
-                <li><strong>Required for Modern Applications:</strong> Fiber optic termination is crucial for technologies such as 5G networks, IoT (Internet of Things) devices, AI (Artificial Intelligence) and cloud services.</li>
+                <li><strong>Required for Modern Applications:</strong> Fiber optic termination is crucial for technologies such as 5G networks, IoT (Internet of Things), AI (Artificial Intelligence) and cloud services.</li>
                 <li><strong>Compatibility with Advanced Equipment:</strong> Fiber optic terminations are compatible with the latest networking equipment, ensuring seamless integration.</li>
                 <li><strong>Ongoing Innovations:</strong> Techniques and tools for fiber termination are continuously improving, offering faster, more efficient, and reliable connections.</li>
                 <li><strong>Testing and Certification:</strong> Properly terminated fiber optic systems require testing and certification to ensure they meet performance and industry standards.</li>
@@ -57,6 +57,31 @@ import React from 'react';
                 <button className="btn-primary" onClick={() => navigate('/contact')}>
                   Get a Free Quote
                 </button>
+              </div>
+              <div className="service-locations">
+                <h2>Serving These Locations</h2>
+                <ul>
+                  <li><span>&#9675;</span> Montreal</li>
+                  <li><span>&#9675;</span> Laval</li>
+                  <li><span>&#9675;</span> West Island</li>
+                  <li><span>&#9675;</span> South Shore</li>
+                  <li><span>&#9675;</span> LaSalle</li>
+                  <li><span>&#9675;</span> DDO | Dollard-Des Ormeaux</li>
+                  <li><span>&#9675;</span> Blainville</li>
+                  <li><span>&#9675;</span> Longueuil</li>
+                  <li><span>&#9675;</span> Boucherville</li>
+                  <li><span>&#9675;</span> Saint-Eustache | St-Eustache</li>
+                  <li><span>&#9675;</span> Saint-Jerome | St-Jerome</li>
+                  <li><span>&#9675;</span> Deux-Montagnes</li>
+                  <li><span>&#9675;</span> Saint-Therese | St-Therese</li>
+                  <li><span>&#9675;</span> NDG | Notre-Dame-de-Grace</li>
+                  <li><span>&#9675;</span> Westmount</li>
+                  <li><span>&#9675;</span> Monkland Village</li>
+                  <li><span>&#9675;</span> Hampstead</li>
+                  <li><span>&#9675;</span> Dorval</li>
+                  <li><span>&#9675;</span> Griffintown</li>
+                  <li><span>&#9675;</span> Saint-Henri | St-Henri</li>
+                </ul>
               </div>
               <p>
                 Explore our other services: <Link to="https://telcomplusmontreal.com/services/fiber-optic-cabling">Fiber Optic Cabling</Link>, <Link to="https://telcomplusmontreal.com/services/fiber-optic-installation">Fiber Optic Installation</Link>, <Link to="https://telcomplusmontreal.com/services/fusion-splicing">Fusion Splicing</Link>, <Link to="https://telcomplusmontreal.com/services/otdr-testing">OTDR Testing</Link>.

@@ -10,6 +10,7 @@ import React from 'react';
           <MainMenu />
           <div className="container service-article">
             <h1>Fiber Optic Cabling Services</h1>
+             <img src="[unsplash_image_url_fiber_optic_cabling]" alt="Fiber Optic Cabling" className="service-image" />
             <div className="article-content">
               <p>
                 In today's high-speed digital world, fiber optic cabling is the gold standard for data transmission. At Telecom Plus Montreal, we specialize in providing cutting-edge fiber optic cabling solutions designed to meet the demands of modern businesses. Whether you need to connect multiple buildings, support bandwidth-intensive applications, or future-proof your network, our expert team is here to deliver reliable and high-performance fiber optic solutions.

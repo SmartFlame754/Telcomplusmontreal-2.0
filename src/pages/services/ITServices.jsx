@@ -47,7 +47,7 @@ import React from 'react';
                 We are committed to providing exceptional service and quality workmanship. Our team of certified technicians has the expertise and experience to handle projects of any size and complexity. We work closely with our clients to understand their specific needs and provide tailored solutions that meet their unique requirements.
               </p>
               
-              <h2>Ready to Optimize Your IT Infrastructure?</h2>
+              <h2>Ready to Optimize Your IT Management?</h2>
               <p>
                 Contact Telecom Plus Montreal today to discuss your IT service needs and discover how we can help you leverage technology to achieve your business goals.
               </p>

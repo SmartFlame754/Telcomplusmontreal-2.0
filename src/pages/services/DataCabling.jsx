@@ -10,6 +10,7 @@ import React from 'react';
           <MainMenu />
           <div className="container service-article">
             <h1>Data Cabling Services</h1>
+             <img src="[unsplash_image_url_data_cabling]" alt="Data Cabling" className="service-image" />
             <div className="article-content">
               <p>
                 In today's digital age, reliable data cabling is essential for seamless communication and efficient operations. At Telecom Plus Montreal, we provide expert data cabling services tailored to meet the specific needs of your business. Our solutions ensure high-speed data transfer, robust connectivity, and a scalable infrastructure to support your growth.

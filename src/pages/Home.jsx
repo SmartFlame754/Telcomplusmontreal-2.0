@@ -113,7 +113,7 @@ import React, { useState, useEffect, useRef } from 'react';
             datasets: [{
               label: 'Service Popularity',
               data: popularityData,
-              backgroundColor: '#9E2B25',
+              backgroundColor: '#ff1e00',
               borderWidth: 1
             }]
           },
@@ -151,11 +151,11 @@ import React, { useState, useEffect, useRef } from 'react';
               <div className="hero-text" style={{textAlign: 'left'}}>
                 <h1>Professional Network Solutions</h1>
                 <p className="hero-subtitle">Reliable, efficient, and tailored to your business needs</p>
-                <div className="hero-cta" style={{justifyContent: 'flex-start'}}>
+                <div className="hero-cta">
                   <button className="btn-primary" onClick={() => navigate('/contact')}>
                     Get Started
                   </button>
-                  <button className="btn-secondary" onClick={() => navigate('/about')}>
+                  <button className="btn-primary" onClick={() => navigate('/services')} style={{ backgroundColor: '#ff1e00', color: '#FFF8F0' }}>
                     Learn More
                   </button>
                 </div>
