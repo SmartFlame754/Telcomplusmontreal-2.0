@@ -190,8 +190,8 @@ import React, { useState, useEffect, useRef } from 'react';
                   )}
                 </li>
                 <li style={{marginLeft: 'auto'}}><Link to="/contact" onClick={closeMobileMenu}>Contact Us</Link>
-                <a href="tel:+14388174587" className="call-button" style={{ backgroundColor: '#9E2B25', color: '#FFF8F0', transition: 'background-color 0.3s', marginLeft: '10px' }} onMouseOver={e => e.target.style.backgroundColor = '#7a2011'} onMouseOut={e => e.target.style.backgroundColor = '#9E2B25'}>Call Us</a>
                 </li>
+                 <a href="tel:+14388174587" className="call-button" style={{ backgroundColor: '#9E2B25', color: '#FFF8F0', transition: 'background-color 0.3s', marginLeft: '10px' }} onMouseOver={e => e.target.style.backgroundColor = '#7a2011'} onMouseOut={e => e.target.style.backgroundColor = '#9E2B25'}>Call Us</a>
               </ul>
             </div>
           </nav>
